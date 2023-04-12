@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cityChrono</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+<body>
+    <!-- start of the to do block -->
+    <div class="wrap">
+        <div class="todo-wrapper">
+            <header>
+                <div class="title">
+                    <span class="material-symbols-outlined">event_list</span>
+                    <h1>To Do List</h1>
+                </div>
+                <button id="create">
+                    <span class="material-symbols-outlined">add</span>
+                </button>
+            </header>
+            <!--  the sec div for the items -->
+            <div class="todo-list" id="list">
+                <div class="item">
+                    <input type="checkbox" />
+                    <input type="text" value="to do content goes here" disabled />
+                    <!-- this div for the bns like edit delete etc -->
+                    <div class="actions">
+                        <button class="material-icons">
+                            <span class="material-symbols-outlined">edit</span>
+                        </button>
+                        <button class="material-icons remove-btn">
+                            <span class="material-symbols-outlined">close</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of the to do block -->
+    </div>
+
+    <!-- linking the JS file -->
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
