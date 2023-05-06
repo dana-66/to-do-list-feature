@@ -26,6 +26,11 @@ create_btn_el.addEventListener('click', CreateNewTodo);
 //     save(); //this will save our data to the local storage
 // }
 function CreateNewTodo() {
+    // check the number of tasks if its 50 
+    if (todos.length >= 50) {
+        alert("You have reached the maximum number of tasks.");
+        return;
+    }
     // a new Todo object
     const item = {
         id: new Date().getTime(),
@@ -47,6 +52,7 @@ function CreateNewTodo() {
 
     save(); //this will save our data to the local storage
 }
+
 
   
 // start of Create Rodo Element function
